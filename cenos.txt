@@ -1,0 +1,434 @@
+
+ot@localhost vpn]# yum install git
+已加载插件：axelget, fastestmirror
+repomd.xml                                                                                                                                                              | 3.6 kB  00:00:00     
+base/group                                                                                                                                                              |    0 B  00:00:03 ... 
+base/primary                                                                                                                                                            | 2.7 MB  00:00:20     
+base/primary_db                                                                                                                                                         | 5.7 MB  00:00:28     
+update base metadata successfully
+epel/x86_64/metalink                                                                                                                                                    | 7.0 kB  00:00:00     
+repomd.xml                                                                                                                                                              | 4.7 kB  00:00:00     
+epel/group                                                                                                                                                              | 1.3 MB  00:00:09     
+epel/updateinfo                                                                                                                                                         |    0 B  00:00:01 ... 
+epel/primary                                                                                                                                                            |    0 B  00:00:00 ... 
+epel/primary_db                                                                                                                                                         |    0 B  00:00:00 ... 
+update epel metadata successfully
+repomd.xml                                                                                                                                                              | 3.4 kB  00:00:00     
+update extras metadata successfully
+repomd.xml                                                                                                                                                              | 3.4 kB  00:00:00     
+updates/prestodelta                                                                                                                                                     | 960 kB  00:00:07     
+updates/primary                                                                                                                                                         | 3.8 MB  00:00:17     
+updates/primary_db                                                                                                                                                      | 6.9 MB  00:00:34     
+update updates metadata successfully
+base                                                                                                                                                                    | 3.6 kB  00:00:00     
+epel                                                                                                                                                                    | 4.7 kB  00:00:00     
+extras                                                                                                                                                                  | 3.4 kB  00:00:00     
+updates                                                                                                                                                                 | 3.4 kB  00:00:00     
+epel/x86_64/updateinfo         FAILED                                             0% [                                                                       ]  0.0 B/s |    0 B  --:--:-- ETA 
+https://mirror.pregi.net/epel/7/x86_64/repodata/d0d154ad795a2cd7b73115f88d2b7ca0bd3c1136ee56bd76830039482ad2e863-updateinfo.xml.bz2: [Errno 14] HTTPS Error 404 - Not Found  0 B  --:--:-- ETA 
+正在尝试其它镜像。
+To address this issue please refer to the below wiki article 
+
+https://wiki.centos.org/yum-errors
+
+If above article doesn't help to resolve this issue please use https://bugs.centos.org/.
+
+(1/5): base/7/x86_64/group_gz                                                                                                                                           | 156 kB  00:00:00     
+(2/5): epel/x86_64/group_gz                                                                                                                                             | 266 kB  00:00:00     
+(3/5): extras/7/x86_64/primary_db                                                                                                                                       | 185 kB  00:00:01     
+(4/5): epel/x86_64/primary_db                                                                                                                                           | 6.3 MB  00:00:02     
+(5/5): epel/x86_64/updateinfo                                                                                                                                           | 907 kB  00:00:00     
+Loading mirror speeds from cached hostfile
+ * base: mirror.pregi.net
+ * epel: mirror.pregi.net
+ * extras: mirror.pregi.net
+ * updates: mirror.pregi.net
+正在解决依赖关系
+--> 正在检查事务
+---> 软件包 git.x86_64.0.1.8.3.1-12.el7_4 将被 安装
+--> 正在处理依赖关系 perl-Git = 1.8.3.1-12.el7_4，它被软件包 git-1.8.3.1-12.el7_4.x86_64 需要
+--> 正在处理依赖关系 perl(Term::ReadKey)，它被软件包 git-1.8.3.1-12.el7_4.x86_64 需要
+--> 正在处理依赖关系 perl(Git)，它被软件包 git-1.8.3.1-12.el7_4.x86_64 需要
+--> 正在处理依赖关系 perl(Error)，它被软件包 git-1.8.3.1-12.el7_4.x86_64 需要
+--> 正在处理依赖关系 libgnome-keyring.so.0()(64bit)，它被软件包 git-1.8.3.1-12.el7_4.x86_64 需要
+--> 正在检查事务
+---> 软件包 libgnome-keyring.x86_64.0.3.12.0-1.el7 将被 安装
+---> 软件包 perl-Error.noarch.1.0.17020-2.el7 将被 安装
+---> 软件包 perl-Git.noarch.0.1.8.3.1-12.el7_4 将被 安装
+---> 软件包 perl-TermReadKey.x86_64.0.2.30-20.el7 将被 安装
+--> 解决依赖关系完成
+
+依赖关系解决
+
+===============================================================================================================================================================================================
+ Package                                           架构                                    版本                                                 源                                        大小
+===============================================================================================================================================================================================
+正在安装:
+ git                                               x86_64                                  1.8.3.1-12.el7_4                                     updates                                  4.4 M
+为依赖而安装:
+ libgnome-keyring                                  x86_64                                  3.12.0-1.el7                                         base                                     109 k
+ perl-Error                                        noarch                                  1:0.17020-2.el7                                      base                                      32 k
+ perl-Git                                          noarch                                  1.8.3.1-12.el7_4                                     updates                                   53 k
+ perl-TermReadKey                                  x86_64                                  2.30-20.el7                                          base                                      31 k
+
+事务概要
+===============================================================================================================================================================================================
+安装  1 软件包 (+4 依赖软件包)
+
+总下载量：4.6 M
+安装大小：23 M
+Is this ok [y/d/N]: y
+Downloading packages:
+git-1.8.3.1-12.el7_4.x86_64.rpm                                                                                                                                         | 4.4 MB  00:00:02     
+(1/4): perl-Error-0.17020-2.el7.noarch.rpm                                                                                                                              |  32 kB  00:00:00     
+(2/4): perl-TermReadKey-2.30-20.el7.x86_64.rpm                                                                                                                          |  31 kB  00:00:00     
+(3/4): libgnome-keyring-3.12.0-1.el7.x86_64.rpm                                                                                                                         | 109 kB  00:00:01     
+(4/4): perl-Git-1.8.3.1-12.el7_4.noarch.rpm                                                                                                                             |  53 kB  00:00:00     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+总计                                                                                                                                                           175 kB/s | 226 kB  00:00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  正在安装    : 1:perl-Error-0.17020-2.el7.noarch                                                                                                                                          1/5 
+  正在安装    : perl-TermReadKey-2.30-20.el7.x86_64                                                                                                                                        2/5 
+  正在安装    : libgnome-keyring-3.12.0-1.el7.x86_64                                                                                                                                       3/5 
+  正在安装    : perl-Git-1.8.3.1-12.el7_4.noarch                                                                                                                                           4/5 
+  正在安装    : git-1.8.3.1-12.el7_4.x86_64                                                                                                                                                5/5 
+  验证中      : git-1.8.3.1-12.el7_4.x86_64                                                                                                                                                1/5 
+  验证中      : 1:perl-Error-0.17020-2.el7.noarch                                                                                                                                          2/5 
+  验证中      : libgnome-keyring-3.12.0-1.el7.x86_64                                                                                                                                       3/5 
+  验证中      : perl-Git-1.8.3.1-12.el7_4.noarch                                                                                                                                           4/5 
+  验证中      : perl-TermReadKey-2.30-20.el7.x86_64                                                                                                                                        5/5 
+
+已安装:
+  git.x86_64 0:1.8.3.1-12.el7_4                                                                                                                                                                
+
+作为依赖被安装:
+  libgnome-keyring.x86_64 0:3.12.0-1.el7            perl-Error.noarch 1:0.17020-2.el7            perl-Git.noarch 0:1.8.3.1-12.el7_4            perl-TermReadKey.x86_64 0:2.30-20.el7           
+
+完毕！
+[root@localhost vpn]# ps -e | grep sshd 
+   915 ?        00:00:00 sshd
+ 19704 ?        00:00:01 sshd
+ 19769 ?        00:00:03 sshd
+ 20032 ?        00:00:01 sshd
+ 20839 ?        00:00:00 sshd
+ 23804 ?        00:00:00 sshd
+ 24409 ?        00:00:02 sshd
+[root@localhost vpn]# ssh-keygen -t rsa -C "1020207100@qq.com" 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:JPEtS2WWvOb8nETonYaEvPGUe0z8clRmcqycr+VYs0E 1020207100@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|      .  .+.   . |
+|       o =o   . *|
+|      ..=..= . O |
+|       ++oB + =E |
+|        S@ B +.. |
+|        . B O oo+|
+|           * + *+|
+|            + o..|
+|                 |
++----[SHA256]-----+
+[root@localhost vpn]# cd /root/.ssh
+[root@localhost .ssh]# ls
+id_rsa  id_rsa.pub
+[root@localhost .ssh]# vim id_rsa.pu
+[root@localhost .ssh]# vim id_rsa.pub
+[root@localhost .ssh]# ls
+id_rsa  id_rsa.pub
+[root@localhost .ssh]# cd /home
+[root@localhost home]# ls
+arth  ian  izumi  job  kino  leo  les  soft  stephen  test.sh  thunder
+[root@localhost home]# cd leo
+[root@localhost leo]# ls
+ListenerCreate.sh  ListenerDelete.sh  pycharm  test
+[root@localhost leo]# mkdir git
+[root@localhost leo]# 
+[root@localhost leo]# cd git
+[root@localhost git]# cd ..
+[root@localhost leo]# cd git
+[root@localhost git]#  git clone https://github.com/leochan1/qqq.git
+正克隆到 'qqq'...
+remote: Counting objects: 6, done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+Unpacking objects: 100% (6/6), done.
+[root@localhost git]# ls
+qqq
+[root@localhost git]# cd qqq
+[root@localhost qqq]# ls
+MultiLog.h  readme.txt
+[root@localhost qqq]# cd ..
+[root@localhost git]# cd ..
+[root@localhost leo]# git remote -v
+fatal: Not a git repository (or any of the parent directories): .git
+[root@localhost leo]# ls
+git  ListenerCreate.sh  ListenerDelete.sh  pycharm  test
+[root@localhost leo]# cd git/
+[root@localhost git]# git remote -v
+fatal: Not a git repository (or any of the parent directories): .git
+[root@localhost git]# git init
+初始化空的 Git 版本库于 /home/leo/git/.git/
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.name "1020207100@qq.com"
+[root@localhost git]# git remote -v
+[root@localhost git]# ls
+qqq
+[root@localhost git]#  git clone https://github.com/leochan1/qqq.git
+fatal: 目标路径 'qqq' 已经存在，并且不是一个空目录。
+[root@localhost git]# ls -a
+.  ..  .git  qqq
+[root@localhost git]# vim readme.md
+[root@localhost git]# git add readme.md 
+[root@localhost git]# git commit -m "add readme file"
+[master（根提交） 06aaa89] add readme file
+ Committer: 1020207100@qq.com <root@localhost.localdomain>
+您的姓名和邮件地址基于登录名和主机名进行了自动设置。请检查它们正确
+与否。您可以通过下面的命令对其进行明确地设置以免再出现本提示信息：
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+设置完毕后，您可以用下面的命令来修正本次提交所使用的用户身份：
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+[root@localhost git]# git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.name "1020207100@qq.com"
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+# 未跟踪的文件:
+#   （使用 "git add <file>..." 以包含要提交的内容）
+#
+#	qqq/
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+[root@localhost git]# git add readme.md 
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+# 未跟踪的文件:
+#   （使用 "git add <file>..." 以包含要提交的内容）
+#
+#	qqq/
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+[root@localhost git]#  git add qqq
+[root@localhost git]# git commit -m "add readme file"
+[master 9da3a61] add readme file
+ Committer: 1020207100@qq.com <root@localhost.localdomain>
+您的姓名和邮件地址基于登录名和主机名进行了自动设置。请检查它们正确
+与否。您可以通过下面的命令对其进行明确地设置以免再出现本提示信息：
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+设置完毕后，您可以用下面的命令来修正本次提交所使用的用户身份：
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 160000 qqq
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.name "1020207100@qq.com"
+[root@localhost git]#  git add qqq
+[root@localhost git]# git add readme.md 
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+无文件要提交，干净的工作区
+[root@localhost git]# git config --global user.email "1020207100@qq.com"
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.email "1020207100@qq.com"
+[root@localhost git]# git add readme.md 
+[root@localhost git]#  git add qqq
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+无文件要提交，干净的工作区
+[root@localhost git]# git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[root@localhost git]# vim qqq/
+.git/       MultiLog.h  readme.txt  
+[root@localhost git]# vim qqq/readme.txt \
+> 
+[root@localhost git]# vim qqq/readme.txt
+[root@localhost git]# vim qqq/readme.txt
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.email "1020207100@qq.com"
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+# 尚未暂存以备提交的变更：
+#   （使用 "git add <file>..." 更新要提交的内容）
+#   （使用 "git checkout -- <file>..." 丢弃工作区的改动）
+#   （提交或丢弃子模组中未跟踪或修改的内容）
+#
+#	修改：      qqq (修改的内容)
+#
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
+[root@localhost git]#  git add qqq
+[root@localhost git]# git commit -m "add readme file"
+# 位于分支 master
+# 尚未暂存以备提交的变更：
+#   （使用 "git add <file>..." 更新要提交的内容）
+#   （使用 "git checkout -- <file>..." 丢弃工作区的改动）
+#   （提交或丢弃子模组中未跟踪或修改的内容）
+#
+#	修改：      qqq (修改的内容)
+#
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
+[root@localhost git]# cd..
+-bash: cd..: 未找到命令
+[root@localhost git]# cd ..
+[root@localhost leo]# cd ..
+[root@localhost home]# ls
+arth  ian  izumi  job  kino  leo  les  soft  stephen  test.sh  thunder
+[root@localhost home]# cd leo
+[root@localhost leo]# ls
+git  ListenerCreate.sh  ListenerDelete.sh  pycharm  test
+[root@localhost leo]# rm -rf git
+[root@localhost leo]# ls
+ListenerCreate.sh  ListenerDelete.sh  pycharm  test
+[root@localhost leo]# mkdir git
+[root@localhost leo]# cd git
+[root@localhost git]# git config --global user.name "leochan1"
+[root@localhost git]# git config --global user.email "1020207100@qq.com"
+[root@localhost git]# ssh -T "1020207100@qq.com"
+ssh: connect to host qq.com port 22: Connection timed out
+[root@localhost git]# git checkout -b master
+fatal: Not a git repository (or any of the parent directories): .git
+[root@localhost git]# git init 
+初始化空的 Git 版本库于 /home/leo/git/.git/
+[root@localhost git]# git checkout -b master
+切换到一个新分支 'master'
+[root@localhost git]# git push --set-upstream https://github.com/leochan1/qqq.git master
+Username for 'https://github.com': leochan1
+Password for 'https://leochan1@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/leochan1/qqq.git/'
+[root@localhost git]# git push --set-upstream https://github.com/leochan1/qqq.git master
+Username for 'https://github.com': leochan1
+Password for 'https://leochan1@github.com': 
+error: src refspec master does not match any.
+error: 无法推送一些引用到 'https://github.com/leochan1/qqq.git'
+[root@localhost git]# ls
+[root@localhost git]# vim aaa.txt
+[root@localhost git]# cat aaa.txt 
+123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123
+[root@localhost git]# git init
+重新初始化现存的 Git 版本库于 /home/leo/git/.git/
+[root@localhost git]# git add aaa.txt 
+[root@localhost git]# git commit -m "init files"
+[master（根提交） 104e3ee] init files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aaa.txt
+[root@localhost git]# ssh -T git@github.com
+The authenticity of host 'github.com (13.250.177.223)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+RSA key fingerprint is MD5:16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of known hosts.
+Hi leochan1! You've successfully authenticated, but GitHub does not provide shell access.
+[root@localhost git]# ls -a
+.  ..  aaa.txt  .git
+[root@localhost git]# git clone git@github.com:leochan1/qqq.git
+正克隆到 'qqq'...
+remote: Counting objects: 6, done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+接收对象中: 100% (6/6), done.
+[root@localhost git]# git add aaa.txt 
+[root@localhost git]# git commit -m "add new file test"
+# 位于分支 master
+# 未跟踪的文件:
+#   （使用 "git add <file>..." 以包含要提交的内容）
+#
+#	qqq/
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+[root@localhost git]# cd qqq
+[root@localhost qqq]# ls
+MultiLog.h  readme.txt
+[root@localhost qqq]# vim aa.cpp
+[root@localhost qqq]# ls
+aa.cpp  MultiLog.h  readme.txt
+[root@localhost qqq]# git add aa.cpp 
+[root@localhost qqq]# git commit -m "add new file test"
+[master b029930] add new file test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aa.cpp
+[root@localhost qqq]# chmod 100644 aa.cpp
+chmod: 无效模式："100644"
+Try 'chmod --help' for more information.
+[root@localhost qqq]# chmod u+x aa.cpp
+[root@localhost qqq]# git commit -m "add new file test"
+# 位于分支 master
+# 您的分支领先 'origin/master' 共 1 个提交。
+#   （使用 "git push" 来发布您的本地提交）
+#
+# 尚未暂存以备提交的变更：
+#   （使用 "git add <file>..." 更新要提交的内容）
+#   （使用 "git checkout -- <file>..." 丢弃工作区的改动）
+#
+#	修改：      aa.cpp
+#
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
+[root@localhost qqq]# git add aa.cpp 
+[root@localhost qqq]# git commit -m "add new file test"
+[master 91aced9] add new file test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 aa.cpp
+[root@localhost qqq]# git push origin master
+Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+Counting objects: 6, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 495 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To git@github.com:leochan1/qqq.git
+   79642f6..91aced9  master -> master
+[root@localhost qqq]# cd ..
+[root@localhost git]# git clone git@github.com:leochan1/qqq.gitssh -T git@github.com
+error: unknown switch `T'
+用法：git clone [选项] [--] <版本库> [<路径>]
+
+    -v, --verbose         更加详细
+    -q, --quiet           更加安静
+    --progress            强制显示进度报告
+    -n, --no-checkout     不创建一个检出
+    --bare                创建一个裸版本库
+    --mirror              创建一个镜像版本库（也是裸版本库）
+    -l, --local           从本地版本库克隆
+    --no-hardlinks        不使用本地硬链接，始终复制
+    -s, --shared          设置为共享版本库
+    --recursive           在克隆时初始化子模组
+    --recurse-submodules  在克隆时初始化子模组
+    --template <模板目录>
+                          模板目录将被使用
+    --reference <版本库>  引用版本库
+    -o, --origin <名称>   使用<名称>而不是 'origin' 去跟踪上游
+    -b, --branch <分支>   检出<分支>而不是远程HEAD
+    -u, --upload-pack <路径>
+                          远程 git-upload-pack 路径
+    --depth <深度>        创建一个指定深度的浅克隆
+    --single-branch       只克隆一个分支、HEAD 或 --branch
+    --separate-git-dir <git目录>
+                          git目录和工作区分离
+    -c, --config <key=value>
+                          在新版本库中设置配置信息
+
+[root@localhost git]# 
+
